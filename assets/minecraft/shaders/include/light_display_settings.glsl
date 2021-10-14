@@ -1,0 +1,1 @@
+const vec2 brightness_threshold = vec2(112.);  
