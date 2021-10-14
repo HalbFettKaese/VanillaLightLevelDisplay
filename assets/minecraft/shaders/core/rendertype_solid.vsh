@@ -30,7 +30,7 @@ const vec2[4] corners = vec2[4](
 );
 void main() {
     lightLevel = 1.000001*min(
-        vec2(lessThan(UV2*255./256., brightness_threshold)), 
+        vec2(lessThan(UV2*255./256., brightnessThreshold)), 
         vec2(dot(Normal, vec3(0, 1, 0)) > 0.9));
     cornerPos = corners[gl_VertexID % 4];
     gl_Position = ProjMat * ModelViewMat * vec4(Position + ChunkOffset, 1.0);
